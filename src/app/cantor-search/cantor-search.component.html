@@ -1,0 +1,13 @@
+<div id="search-component">
+    <h4><label for="search-box">Cantor Search</label></h4>
+  
+    <input #searchBox id="search-box" (input)="search(searchBox.value)" />
+  
+    <ul class="search-result">
+      <li *ngFor="let cantor of cantores$ | async" >
+        <a routerLink="/detail/{{cantor.id}}">
+          {{cantor.name}}
+        </a>
+      </li>
+    </ul>
+  </div>

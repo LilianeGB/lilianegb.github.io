@@ -1,0 +1,23 @@
+<body>
+<h2>Meus Cantores</h2>
+
+<div>
+  <label>Nome:
+    <input #cantorName />
+  </label>
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button (click)="add(cantorName.value); cantorName.value=''">
+    add
+  </button>
+</div>
+
+<ul class="cantores">
+  <li *ngFor="let cantor of cantores">
+    <a routerLink="/detail/{{cantor.id}}">
+      <span class="badge">{{cantor.id}}</span> {{cantor.name}}
+    </a>
+    <button class="delete" title="delete cantor"
+      (click)="delete(cantor)">x</button>
+  </li>
+</ul>
+</body>

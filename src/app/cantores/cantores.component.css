@@ -1,0 +1,77 @@
+/* CantoresComponent's private CSS styles */
+
+body{
+  background: #ffffffa4;
+}
+.cantores {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
+}
+.cantores li {
+  position: relative;
+  cursor: pointer;
+  background-color: #EEE;
+  margin: .5em;
+  padding: .3em 0;
+  height: 1.6em;
+  border-radius: 4px;
+}
+
+.cantores li:hover {
+  color: rgb(235, 18, 72);
+  background-color: rgb(0, 0, 0);
+  left: .1em;
+}
+
+.cantores a {
+  color: rgb(15, 12, 12);
+  text-decoration: none;
+  position: relative;
+  display: block;
+  width: 250px;
+}
+
+.cantores a:hover {
+  color:rgb(233, 121, 139);
+}
+
+.cantores .badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color:#d41f37;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  min-width: 16px;
+  text-align: right;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}
+
+button {
+  background-color: rgb(64, 162, 207);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  cursor: hand;
+  font-family: Arial;
+}
+
+button:hover {
+  background-color: #cfd8dc;
+}
+
+button.delete {
+  position: relative;
+  left: 194px;
+  top: -32px;
+  background-color: gray !important;
+  color: white;
+}

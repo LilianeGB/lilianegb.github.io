@@ -1,0 +1,11 @@
+<h3>Top Cantores</h3>
+<div class="grid grid-pad">
+  <a *ngFor="let cantor of cantores" class="col-1-4"
+      routerLink="/detail/{{cantor.id}}">
+    <div class="module cantor">
+      <h4>{{cantor.name}}</h4>
+    </div>
+  </a>
+</div>
+
+<app-cantor-search></app-cantor-search>

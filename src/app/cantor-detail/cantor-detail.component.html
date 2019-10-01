@@ -1,0 +1,12 @@
+<body>
+<div *ngIf="cantor">
+  <h2>{{cantor.name | uppercase}} Details</h2>
+  <div>
+    <label>Nome:
+      <input [(ngModel)]="cantor.name" placeholder="name"/>
+    </label>
+  </div>
+  <button (click)="goBack()">go back</button>
+  <button (click)="save()">save</button>
+</div>
+</body>
